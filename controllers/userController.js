@@ -80,6 +80,6 @@ exports.listUsers = async (req, res) => {
             user: listUsers
         })
     } catch (error) {
-        res.status(404).json({message: error.message})
+        res.status(421).json({message: error.message})
     }
 }
