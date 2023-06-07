@@ -77,7 +77,7 @@ exports.listUsers = async (req, res) => {
     try {
         const listUsers = await User.find({})
         res.render ('/Index', {
-            user: listUsers
+            users: listUsers
         })
     } catch (error) {
         res.status(421).json({message: error.message})
